@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотний зв'язок та Опитування</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:wght@400;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main class="form-page">
+        <section>
+            <h1>Зворотний зв'язок</h1>
+            <p>Маєте запитання щодо екскурсій? Напишіть нам!</p>
+
+            <form action="#">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Іван Іванов" required>
+                <br>
+                
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="mail@example.com" required>
+                <br>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Напишіть ваше запитання..." required></textarea>
+                <br>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Анкета туриста</h2>
+            <form action="#">
+                <label for="user-login">Ваш логін (нікнейм):</label>
+                <input type="text" id="user-login" name="login" placeholder="Введіть логін" required>
+                <br>
+
+                <label for="user-email">Електронна пошта:</label>
+                <input type="email" id="user-email" name="email" placeholder="mail@example.com" required>
+                <br>
+
+                <label for="user-experience">Поділіться враженнями від відвідування Старого міста:</label><br>
+                <textarea id="user-experience" name="experience" rows="5" placeholder="Найбільше мені сподобалось..." required></textarea>
+                <br>
+
+                <label for="visit-purpose">Мета вашого візиту:</label>
+                <select id="visit-purpose" name="purpose">
+                    <option value="tourism" selected>Туризм (за замовчуванням)</option>
+                    <option value="business">Робоче відрядження</option>
+                    <option value="family">Візит до родичів</option>
+                </select>
+                <br>
+
+                <p>Яким транспортом ви дісталися міста?</p>
+                <label><input type="radio" name="transport" value="train" required> Потяг</label>
+                <label><input type="radio" name="transport" value="bus" required> Автобус</label>
+                <label><input type="radio" name="transport" value="car" required> Власне авто</label>
+                <br>
+
+                <p>Які локації ви вже відвідали?</p>
+                <label><input type="checkbox" name="visited" value="fortress"> Стара Фортеця</label>
+                <label><input type="checkbox" name="visited" value="canyon"> Каньйон</label>
+                <label><input type="checkbox" name="visited" value="museum"> Музеї міста</label>
+                <br>
+
+                <button type="submit">Відправити анкету</button>
+                <button type="reset">Очистити дані</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Туристичний портал Кам'янця-Подільського. Всі права захищено.</p>
+    </footer>
+    <a href="#nav" class="to-top" aria-label="Нагору"></a>
+</body>
+</html>
